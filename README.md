@@ -91,13 +91,13 @@
 <p align="center"><strong>Linguagens de programação</strong></p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,python,c,typescript,javascript&theme=dark" alt="Linguagens" />
+  <img src="https://skillicons.dev/icons?i=java,python,c,typescript,javascript,dart&theme=dark" alt="Linguagens" />
 </p>
 
 <p align="center"><strong>Frameworks e bibliotecas</strong></p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=spring,react,threejs&theme=dark" alt="Frameworks" />
+  <img src="https://skillicons.dev/icons?i=spring,react,threejs,flutter&theme=dark" alt="Frameworks e bibliotecas" />
 </p>
 
 <p align="center"><strong>Dados e Inteligência Artificial</strong></p>
