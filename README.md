@@ -195,7 +195,7 @@
   <img
     src="./github-metrics.svg"
     width="100%"
-    alt="Estatísticas e linguagens do GitHub"
+    alt="Estatísticas do GitHub"
   />
 </p>
 
