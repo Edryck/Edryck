@@ -1,0 +1,42 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080808"/>
+      <stop offset="65%" stop-color="#160909"/>
+      <stop offset="100%" stop-color="#300707"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7f0000"/>
+      <stop offset="50%" stop-color="#e00024"/>
+      <stop offset="100%" stop-color="#ff4040"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="280" fill="url(#bg)"/>
+  <path d="M0 220 L450 0 M180 280 L650 0 M850 280 L1120 0"
+        stroke="#ffffff" stroke-opacity=".035" stroke-width="2" fill="none"/>
+  <circle cx="1030" cy="65" r="170" fill="#c00020" opacity=".08"/>
+  <circle cx="1030" cy="65" r="115" fill="none"
+          stroke="#e00024" stroke-opacity=".25" stroke-width="1"/>
+  <path d="M0 245 H1200" stroke="url(#red)" stroke-width="3"/>
+  <path d="M0 250 H1200" stroke="#e00024" stroke-opacity=".15"/>
+
+  <text x="75" y="125" fill="#ffffff" font-size="54"
+        font-family="Arial, Helvetica, sans-serif" font-weight="bold">
+    EDRYCK
+  </text>
+  <rect x="77" y="145" width="90" height="5" rx="2" fill="#e00024"/>
+  <text x="75" y="185" fill="#b8b8b8" font-size="21"
+        font-family="Arial, Helvetica, sans-serif">
+    Computer Science Student | Developer
+  </text>
+  <text x="75" y="220" fill="#777777" font-size="14"
+        font-family="Arial, Helvetica, sans-serif" letter-spacing="3">
+    BUILDING · LEARNING · CREATING
+  </text>
+  <text x="1100" y="220" fill="#e00024" font-size="14"
+        text-anchor="end" font-family="monospace">
+    01 / DEV
+  </text>
+</svg>
