@@ -17,15 +17,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate Snake Animation
+      - name: Generate Snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Edryck
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=%23E00024&color_dots=%23EBEBEB,%23FBCACA,%23F87171,%23EF4444,%23B91C1C
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%23FF4040&color_dots=%232D2D2D,%235A1717,%238F1010,%23C51D2D,%23FF4040
+            dist/github-contribution-grid-snake.svg?palette=github-light&color_snake=#E00024&color_dots=#EBEBEB,#FBCACA,#F87171,#EF4444,#B91C1C
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#FF4040&color_dots=#2D2D2D,#5A1717,#8F1010,#C51D2D,#FF4040
 
-      - name: Publish to output branch
+      - name: Verify generated files
+        run: |
+          echo "Light SVG:"
+          grep -oE '#[A-Fa-f0-9]{6}' dist/github-contribution-grid-snake.svg | sort | uniq -c
+
+          echo "Dark SVG:"
+          grep -oE '#[A-Fa-f0-9]{6}' dist/github-contribution-grid-snake-dark.svg | sort | uniq -c
+
+      - name: Publish
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
